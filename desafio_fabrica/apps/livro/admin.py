@@ -5,4 +5,4 @@ from .models import Book
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
     model = Book
-    fields = ["title", "description", "date", "authors"]
+    fields = ["title", "description", "date", "authors", "categories"]

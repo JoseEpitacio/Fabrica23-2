@@ -1,6 +1,14 @@
-from django.urls import path
+from django.urls import path, include
+from rest_framework import routers
+from apps.livro.api.viewsets import BookViewSet
+
 from . import views
 
+router = routers.DefaultRouter()
+
+router.register('', BookViewSet, basename="books")
+
 urlpatterns = [
-    path('', views.pagination, name="pagination"),
+    #path('template', views.pagination, name="pagination"),
+    path('', include(router.urls)),
 ]
