@@ -37,6 +37,9 @@ Crie um banco no PSQL e configure a conexão no settings.py
 Após todos os pré-requisitos instalados, execute a aplicação com 'python ./manage.py runserver'
 
 # Criação de Entidades
-Para criar os Autores e os Livros acesse localhost:8000/admin e crie o seu superuser com 'python ./manage.py createsuperuser'
+Para criar os Autores acesse localhost:8000/autores/'
+Para criar os Livros acesse localhost:8000/livros/'
+Para criar as Categorias acesse localhost:8000/categorias/'
+Para buscar os Livros classificados por categoria digite ?categoria="nome da categoria" após o link de livros
 
 # Autor [JoseEpitacio](https://github.com/JoseEpitacio/)
